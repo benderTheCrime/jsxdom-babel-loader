@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Webpack loader for Babel/jsxdom",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/benderTheCrime/jsxdom-babel-loader"
@@ -20,7 +22,8 @@
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.3.26",
-    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
     "chai": "^3.4.1",
     "jsxdom": "ssh+git@github.com:benderTheCrime/jsxdom.git",
     "loader-utils": "^0.2.12",

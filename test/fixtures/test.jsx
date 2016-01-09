@@ -1,5 +1,3 @@
-function test() {
-  return (
-    <div className="hello"></div>
-  );
+export default function test() {
+    return (<div className="hello"></div>);
 }

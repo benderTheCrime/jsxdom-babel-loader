@@ -317,5 +317,5 @@ local.properties
 
 ### Custom ###
 dist
-src/js/config/local.js
 npm-shrinkwrap.json
+test/output
