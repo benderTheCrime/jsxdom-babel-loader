@@ -21,7 +21,7 @@
   "dependencies": {
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.1",
-    "jsxdom": "^2.2.0",
+    "jsxdom": "ssh+git@github.com:benderTheCrime/jsxdom.git",
     "loader-utils": "^0.2.12"
   },
   "devDependencies": {
