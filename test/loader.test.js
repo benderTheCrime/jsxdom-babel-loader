@@ -19,7 +19,18 @@ var config = {
         loader: jsxdomLoader,
         excludes: /node_modules/,
         query: {
-          variablePrefix: '_'
+            declarationType: 'let',
+            acorn: {
+                plugins: {
+                    jsx: true
+                },
+                ecmaVersion: 6,
+                sourceType: 'module',
+                allowReserved: true
+            },
+            babel: {
+                presets: [ 'es2015', 'stage-0' ]
+            }
         }
       }
     ]
@@ -34,7 +45,7 @@ describe('loader', function() {
         assert.lengthOf(files, 1);
 
         fs.readFile(path.resolve(outputDir, files[0]), {encoding: 'utf8'}, function(err, source) {
-          assert.match(source, /var _a = document\.createElement\('div'\)/);
+          assert.match(source, /var \$\$a = document\.createElement\('div'\)/);
           assert.match(source, /setAttributes/);
           assert.match(source, /appendChildren/);
           done();
