@@ -21,11 +21,9 @@
   "dependencies": {
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.1",
-    "jsxdom": "^2.2.0",
-    "loader-utils": "^0.2.12"
-  },
-  "devDependencies": {
     "chai": "^3.4.1",
+    "jsxdom": "^2.2.0",
+    "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
     "webpack": "^1.12.9"
   }
