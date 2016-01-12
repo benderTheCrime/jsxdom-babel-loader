@@ -24,9 +24,11 @@
     "babel-core": "^6.3.26",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
-    "chai": "^3.4.1",
     "jsxdom": "git+https://git@github.com:benderTheCrime/jsxdom.git",
-    "loader-utils": "^0.2.12",
+    "loader-utils": "^0.2.12"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
     "mocha": "^2.3.4",
     "webpack": "^1.12.9"
   }
