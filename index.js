@@ -5,10 +5,6 @@ var loaderUtils = require('loader-utils'),
 module.exports = function(source) {
     this.cacheable && this.cacheable(true);
     var query = loaderUtils.parseQuery(this.query),
-        tree = [
-            "require('jsxdom/dist/appendChildren.js');",
-            "require('jsxdom/dist/setAttributes.js');",
-            jsxdom.transpile(source, query)
-        ];
-    return babel.transform(tree.join('\n'), query.babel).code;
+        tree = jsxdom.transpile(source, query);
+    return babel.transform(tree, query.babel).code;
 };
